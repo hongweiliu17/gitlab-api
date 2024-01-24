@@ -11,12 +11,12 @@ var (
 	token      string = "WsgTfAskGjsnns1t1HjM"
 	url        string = "https://gitlab.cee.redhat.com"
 	projectID  int    = 84399
-	mrID       int    = 3
-	sha        string = "8123e58477ccb2d5ed50cf9e09b8c72831722c8a"
+	mrID       int    = 5
+	sha        string = "c7e9ab73603131cc9b91a729d9ab2c27be204b24"
 	targetUrl  string = "https://console.redhat.com/preview/application-pipeline/workspaces/hongweiliu/applications/go-test/pipelineruns/go-test-mk45c-bvprc"
 	desciption string = "Failed"
 	name       string = "RHTAP Integration test - scenario 1 - snapshot 1"
-	context    string = "mr 4"
+	context    string = "mr 5"
 )
 
 func main() {
@@ -46,7 +46,7 @@ func main() {
 
 	//Update CommitStatus for Pipeline created above
 	opt = &gitlab.SetCommitStatusOptions{
-		State:       gitlab.BuildStateValue("success"),
+		State:       gitlab.BuildStateValue("failure"),
 		Name:        gitlab.Ptr(name),
 		TargetURL:   gitlab.Ptr(targetUrl),
 		Description: gitlab.Ptr(desciption),
