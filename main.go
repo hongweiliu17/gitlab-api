@@ -8,15 +8,15 @@ import (
 
 var (
 	gitClient  *gitlab.Client
-	token      string = "XXXXXXX"
+	token      string = "WsgTfAskGjsnns1t1HjM"
 	url        string = "https://gitlab.cee.redhat.com"
 	projectID  int    = 84399
-	mrID       int    = 4
+	mrID       int    = 3
 	sha        string = "8123e58477ccb2d5ed50cf9e09b8c72831722c8a"
 	targetUrl  string = "https://console.redhat.com/preview/application-pipeline/workspaces/hongweiliu/applications/go-test/pipelineruns/go-test-mk45c-bvprc"
 	desciption string = "Failed"
 	name       string = "RHTAP Integration test - scenario 1 - snapshot 1"
-	context    string = "mr 14"
+	context    string = "mr 4"
 )
 
 func main() {
